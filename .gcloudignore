@@ -1,0 +1,12 @@
+# Files Cloud Build should not upload (same as .dockerignore)
+.git
+.venv
+**/node_modules
+**/__pycache__
+**/.pytest_cache
+frontend/dist
+backend/static
+.env
+benchmarks/results/*.png
+benchmarks/results/run_*.csv
+docs/images

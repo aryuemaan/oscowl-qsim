@@ -1,0 +1,6 @@
+# Optional extras. Install only what you need:
+#   pip install -r requirements-optional.txt
+jax[cpu]>=0.4.30          # ARRAY_BACKEND=jax (use jax[cuda12] on NVIDIA GPU nodes, jax[tpu] on TPU VMs)
+google-adk>=1.0           # run the debug agent in `adk web` / deploy to Agent Platform
+google-cloud-storage>=2.16  # gs:// paths in the batch worker
+qiskit>=1.0               # sdk/python helper: convert Qiskit circuits to QASM

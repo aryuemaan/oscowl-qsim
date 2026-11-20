@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "windows": {
+    "options": { "shell": { "executable": "C:\\Program Files\\Git\\bin\\bash.exe", "args": ["-c"] } }
+  },
+  "tasks": [
+    {
+      "label": "Backend: dev server",
+      "type": "shell",
+      "command": "bash scripts/run-backend.sh",
+      "isBackground": true,
+      "problemMatcher": { "pattern": { "regexp": "^x^" }, "background": { "activesBegin": ".", "beginsPattern": "Will watch|Started reloader", "endsPattern": "Application startup complete" } },
+      "presentation": { "group": "dev", "panel": "dedicated" }
+    },
+    {
+      "label": "Frontend: dev server",
+      "type": "shell",
+      "command": "bash scripts/run-frontend.sh",
+      "isBackground": true,
+      "problemMatcher": { "pattern": { "regexp": "^x^" }, "background": { "activesBegin": ".", "beginsPattern": "VITE|vite", "endsPattern": "Local:" } },
+      "presentation": { "group": "dev", "panel": "dedicated" }
+    },
+    {
+      "label": "Dev: start everything",
+      "dependsOn": ["Backend: dev server", "Frontend: dev server"],
+      "dependsOrder": "parallel",
+      "problemMatcher": []
+    },
+    { "label": "Setup (first time)", "type": "shell", "command": "bash scripts/setup.sh", "problemMatcher": [] },
+    { "label": "Tests", "type": "shell", "command": "bash scripts/test.sh", "group": { "kind": "test", "isDefault": true }, "problemMatcher": [] },
+    { "label": "Benchmark", "type": "shell", "command": "bash scripts/bench.sh", "problemMatcher": [] }
+  ]
+}

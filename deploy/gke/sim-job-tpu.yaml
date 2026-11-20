@@ -1,0 +1,35 @@
+# Large simulation as a Kubernetes Job on a GKE Cloud TPU node pool.
+# The selector values below are for a single-host TPU v6e (Trillium) slice. For other
+# generations (for example Ironwood) use the accelerator/topology names from the GKE TPU docs:
+#   https://cloud.google.com/kubernetes-engine/docs/concepts/plan-tpus
+# Image: build with EXTRA_PIP="jax[tpu]". Spec ConfigMap: see sim-job-gpu.yaml.
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: qsim-sim-tpu
+spec:
+  backoffLimit: 0
+  ttlSecondsAfterFinished: 3600
+  template:
+    spec:
+      restartPolicy: Never
+      nodeSelector:
+        cloud.google.com/gke-tpu-accelerator: tpu-v6e-slice   # <- check for your TPU generation
+        cloud.google.com/gke-tpu-topology: 1x1
+      containers:
+        - name: worker
+          image: REGION-docker.pkg.dev/PROJECT_ID/qsim/oscowl-qsim-tpu:latest   # <- replace
+          command: ["python", "-m", "app.worker", "--spec", "/spec/job.json"]
+          env:
+            - name: ARRAY_BACKEND
+              value: jax
+          resources:
+            limits:
+              google.com/tpu: 1
+          volumeMounts:
+            - name: spec
+              mountPath: /spec
+      volumes:
+        - name: spec
+          configMap:
+            name: qsim-job-spec

@@ -1,0 +1,13 @@
+{
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "files.eol": "\n",
+  "editor.formatOnSave": false,
+  "python.terminal.activateEnvironment": true,
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.cwd": "${workspaceFolder}/backend",
+  "python.testing.pytestArgs": ["tests"],
+  "python.analysis.extraPaths": ["${workspaceFolder}/backend"],
+  "files.associations": { "*.qasm": "plaintext" },
+  "search.exclude": { "**/node_modules": true, "**/.venv": true, "frontend/dist": true, "backend/static": true }
+}

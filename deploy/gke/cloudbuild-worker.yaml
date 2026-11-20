@@ -1,0 +1,11 @@
+# Build the worker image with an accelerator flavour of JAX.
+#   gcloud builds submit --config deploy/gke/cloudbuild-worker.yaml \
+#     --substitutions=_IMAGE=REGION-docker.pkg.dev/PROJECT_ID/qsim/oscowl-qsim-gpu:latest,_EXTRA_PIP="jax[cuda12] google-cloud-storage" .
+substitutions:
+  _IMAGE: ""
+  _EXTRA_PIP: "jax[cuda12] google-cloud-storage"
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args: ["build", "--build-arg", "EXTRA_PIP=${_EXTRA_PIP}", "-t", "${_IMAGE}", "."]
+images: ["${_IMAGE}"]
+timeout: 1800s

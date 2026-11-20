@@ -1,0 +1,5 @@
+{
+  "qasm_path": "app/examples/hea_32.qasm",
+  "noise": {"p1": 0.0005, "p2": 0.005, "amplitude_damping": 0.001, "readout": 0.01},
+  "options": {"shots": 8192, "trajectories": 128, "backend": "mps", "max_bond": 256, "seed": 7}
+}

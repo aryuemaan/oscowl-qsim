@@ -1,0 +1,38 @@
+# Large simulation as a Kubernetes Job on a GKE GPU node (NVIDIA L4).
+# Image: build with JAX CUDA support using deploy/gke/cloudbuild-worker.yaml (see docs/GCP_DEPLOY.md).
+# Spec: kubectl create configmap qsim-job-spec --from-file=job.json=deploy/gke/job-spec.json
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: qsim-sim-gpu
+spec:
+  backoffLimit: 0
+  ttlSecondsAfterFinished: 3600
+  template:
+    spec:
+      restartPolicy: Never
+      nodeSelector:
+        cloud.google.com/gke-accelerator: nvidia-l4
+      containers:
+        - name: worker
+          image: REGION-docker.pkg.dev/PROJECT_ID/qsim/oscowl-qsim-gpu:latest   # <- replace
+          command: ["python", "-m", "app.worker", "--spec", "/spec/job.json"]
+          # To keep results, write to Cloud Storage: add "--out", "gs://YOUR_BUCKET/results/run.json"
+          # (the image then needs google-cloud-storage: build with EXTRA_PIP="jax[cuda12] google-cloud-storage").
+          env:
+            - name: ARRAY_BACKEND
+              value: jax
+          resources:
+            limits:
+              nvidia.com/gpu: 1
+              memory: 16Gi
+            requests:
+              cpu: "4"
+              memory: 16Gi
+          volumeMounts:
+            - name: spec
+              mountPath: /spec
+      volumes:
+        - name: spec
+          configMap:
+            name: qsim-job-spec

@@ -1,0 +1,14 @@
+# Run the production container locally: docker compose up --build  ->  http://localhost:8080
+# Values come from your .env file (docker compose reads it automatically).
+services:
+  qsim:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      QSIM_AI_MODE: ${QSIM_AI_MODE:-auto}
+      GEMINI_FLASH_MODEL: ${GEMINI_FLASH_MODEL:-gemini-3.8-flash}
+      GEMINI_REASONING_MODEL: ${GEMINI_REASONING_MODEL:-gemini-4-argon}
+      GEMMA_PROVIDER: ${GEMMA_PROVIDER:-auto}
+      GEMMA_MODEL: ${GEMMA_MODEL:-gemma-4-26b-a4b-it}

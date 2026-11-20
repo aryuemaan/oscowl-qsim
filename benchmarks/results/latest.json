@@ -1,0 +1,484 @@
+{
+ "created": "2026-11-19T04:56:12",
+ "machine": {
+  "platform": "Linux 6.18.44-fc-v653",
+  "cpu": "x86_64",
+  "python": "3.13.18",
+  "numpy": "2.5.5"
+ },
+ "rows": [
+  {
+   "method": "statevector",
+   "circuit": "GHZ chain",
+   "qubits": 4,
+   "seconds": 0.0009485529999437858,
+   "peak_bytes": 4688,
+   "state_bytes": 256,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "statevector",
+   "circuit": "GHZ chain",
+   "qubits": 6,
+   "seconds": 0.001016153999898961,
+   "peak_bytes": 7448,
+   "state_bytes": 1024,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "statevector",
+   "circuit": "GHZ chain",
+   "qubits": 8,
+   "seconds": 0.0014956920001623075,
+   "peak_bytes": 17264,
+   "state_bytes": 4096,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "statevector",
+   "circuit": "GHZ chain",
+   "qubits": 10,
+   "seconds": 0.0018829640000603831,
+   "peak_bytes": 54792,
+   "state_bytes": 16384,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "statevector",
+   "circuit": "GHZ chain",
+   "qubits": 12,
+   "seconds": 0.0023929219998990447,
+   "peak_bytes": 202912,
+   "state_bytes": 65536,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "statevector",
+   "circuit": "GHZ chain",
+   "qubits": 14,
+   "seconds": 0.004329961000166804,
+   "peak_bytes": 793432,
+   "state_bytes": 262144,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "statevector",
+   "circuit": "GHZ chain",
+   "qubits": 16,
+   "seconds": 0.01108736600008342,
+   "peak_bytes": 3153320,
+   "state_bytes": 1048576,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "statevector",
+   "circuit": "GHZ chain",
+   "qubits": 18,
+   "seconds": 0.0297834899999998,
+   "peak_bytes": 12591104,
+   "state_bytes": 4194304,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "statevector",
+   "circuit": "GHZ chain",
+   "qubits": 20,
+   "seconds": 0.12168374100019719,
+   "peak_bytes": 50340568,
+   "state_bytes": 16777216,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "statevector",
+   "circuit": "GHZ chain",
+   "qubits": 22,
+   "seconds": 1.118405853000013,
+   "peak_bytes": 201336112,
+   "state_bytes": 67108864,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "statevector",
+   "circuit": "GHZ chain",
+   "qubits": 24,
+   "seconds": 5.176517935999982,
+   "peak_bytes": 805316472,
+   "state_bytes": 268435456,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "mps",
+   "circuit": "GHZ chain",
+   "qubits": 4,
+   "seconds": 0.0011537750001480163,
+   "peak_bytes": 8408,
+   "state_bytes": 384,
+   "max_bond": 2,
+   "fidelity_vs_dense": 1.0,
+   "note": "exact"
+  },
+  {
+   "method": "mps",
+   "circuit": "GHZ chain",
+   "qubits": 8,
+   "seconds": 0.001329684999973324,
+   "peak_bytes": 9432,
+   "state_bytes": 896,
+   "max_bond": 2,
+   "fidelity_vs_dense": 1.0,
+   "note": "exact"
+  },
+  {
+   "method": "mps",
+   "circuit": "GHZ chain",
+   "qubits": 12,
+   "seconds": 0.0017226099998879363,
+   "peak_bytes": 10768,
+   "state_bytes": 1408,
+   "max_bond": 2,
+   "fidelity_vs_dense": 1.0,
+   "note": "exact"
+  },
+  {
+   "method": "mps",
+   "circuit": "GHZ chain",
+   "qubits": 16,
+   "seconds": 0.0022984690001521813,
+   "peak_bytes": 12264,
+   "state_bytes": 1920,
+   "max_bond": 2,
+   "fidelity_vs_dense": 1.0,
+   "note": "exact"
+  },
+  {
+   "method": "mps",
+   "circuit": "GHZ chain",
+   "qubits": 20,
+   "seconds": 0.002887801999804651,
+   "peak_bytes": 13920,
+   "state_bytes": 2432,
+   "max_bond": 2,
+   "fidelity_vs_dense": 1.0,
+   "note": "exact"
+  },
+  {
+   "method": "mps",
+   "circuit": "GHZ chain",
+   "qubits": 24,
+   "seconds": 0.004379583999934766,
+   "peak_bytes": 15512,
+   "state_bytes": 2944,
+   "max_bond": 2,
+   "fidelity_vs_dense": null,
+   "note": "exact"
+  },
+  {
+   "method": "mps",
+   "circuit": "GHZ chain",
+   "qubits": 28,
+   "seconds": 0.0044560899998487,
+   "peak_bytes": 17160,
+   "state_bytes": 3456,
+   "max_bond": 2,
+   "fidelity_vs_dense": null,
+   "note": "exact"
+  },
+  {
+   "method": "mps",
+   "circuit": "GHZ chain",
+   "qubits": 32,
+   "seconds": 0.007474751000017932,
+   "peak_bytes": 18752,
+   "state_bytes": 3968,
+   "max_bond": 2,
+   "fidelity_vs_dense": null,
+   "note": "exact"
+  },
+  {
+   "method": "mps",
+   "circuit": "GHZ chain",
+   "qubits": 48,
+   "seconds": 0.007961581000017759,
+   "peak_bytes": 25304,
+   "state_bytes": 6016,
+   "max_bond": 2,
+   "fidelity_vs_dense": null,
+   "note": "exact"
+  },
+  {
+   "method": "mps",
+   "circuit": "GHZ chain",
+   "qubits": 64,
+   "seconds": 0.01043699599995307,
+   "peak_bytes": 31792,
+   "state_bytes": 8064,
+   "max_bond": 2,
+   "fidelity_vs_dense": null,
+   "note": "exact"
+  },
+  {
+   "method": "mps",
+   "circuit": "GHZ chain",
+   "qubits": 96,
+   "seconds": 0.021240537000039694,
+   "peak_bytes": 44936,
+   "state_bytes": 12160,
+   "max_bond": 2,
+   "fidelity_vs_dense": null,
+   "note": "exact"
+  },
+  {
+   "method": "mps",
+   "circuit": "GHZ chain",
+   "qubits": 128,
+   "seconds": 0.01673140200000489,
+   "peak_bytes": 57888,
+   "state_bytes": 16256,
+   "max_bond": 2,
+   "fidelity_vs_dense": null,
+   "note": "exact"
+  },
+  {
+   "method": "statevector",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 4,
+   "seconds": 0.002434754999967481,
+   "peak_bytes": 9432,
+   "state_bytes": 256,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "statevector",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 6,
+   "seconds": 0.006543238999938694,
+   "peak_bytes": 14488,
+   "state_bytes": 1024,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "statevector",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 8,
+   "seconds": 0.007569666999870606,
+   "peak_bytes": 25856,
+   "state_bytes": 4096,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "statevector",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 10,
+   "seconds": 0.00897482499999569,
+   "peak_bytes": 64512,
+   "state_bytes": 16384,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "statevector",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 12,
+   "seconds": 0.011148471000069549,
+   "peak_bytes": 213928,
+   "state_bytes": 65536,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "statevector",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 14,
+   "seconds": 0.017633821000117678,
+   "peak_bytes": 805552,
+   "state_bytes": 262144,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "statevector",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 16,
+   "seconds": 0.05021094800008541,
+   "peak_bytes": 3166792,
+   "state_bytes": 1048576,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "statevector",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 18,
+   "seconds": 0.21047863600006167,
+   "peak_bytes": 12605792,
+   "state_bytes": 4194304,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "statevector",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 20,
+   "seconds": 0.8712585669998134,
+   "peak_bytes": 50356472,
+   "state_bytes": 16777216,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "statevector",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 22,
+   "seconds": 9.325492453000152,
+   "peak_bytes": 201353232,
+   "state_bytes": 67108864,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "statevector",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 24,
+   "seconds": 42.11408930300013,
+   "peak_bytes": 805334808,
+   "state_bytes": 268435456,
+   "max_bond": null,
+   "fidelity_vs_dense": null
+  },
+  {
+   "method": "mps",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 4,
+   "seconds": 0.004767755000102625,
+   "peak_bytes": 12735,
+   "state_bytes": 640,
+   "max_bond": 4,
+   "fidelity_vs_dense": 0.9999999999999989,
+   "note": "exact"
+  },
+  {
+   "method": "mps",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 8,
+   "seconds": 0.01220479699986754,
+   "peak_bytes": 76344,
+   "state_bytes": 9344,
+   "max_bond": 13,
+   "fidelity_vs_dense": 0.9999999999999969,
+   "note": "exact"
+  },
+  {
+   "method": "mps",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 12,
+   "seconds": 0.018608240999810732,
+   "peak_bytes": 178952,
+   "state_bytes": 34400,
+   "max_bond": 16,
+   "fidelity_vs_dense": 0.9999999999999742,
+   "note": "exact"
+  },
+  {
+   "method": "mps",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 16,
+   "seconds": 0.026479273000177272,
+   "peak_bytes": 191712,
+   "state_bytes": 55744,
+   "max_bond": 16,
+   "fidelity_vs_dense": 0.9999999999999725,
+   "note": "exact"
+  },
+  {
+   "method": "mps",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 20,
+   "seconds": 0.03548750300001302,
+   "peak_bytes": 260600,
+   "state_bytes": 82400,
+   "max_bond": 16,
+   "fidelity_vs_dense": 0.9999999999999454,
+   "note": "exact"
+  },
+  {
+   "method": "mps",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 24,
+   "seconds": 0.04804840399992827,
+   "peak_bytes": 304016,
+   "state_bytes": 110240,
+   "max_bond": 16,
+   "fidelity_vs_dense": null,
+   "note": "exact"
+  },
+  {
+   "method": "mps",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 28,
+   "seconds": 0.044993578000003254,
+   "peak_bytes": 314344,
+   "state_bytes": 126848,
+   "max_bond": 16,
+   "fidelity_vs_dense": null,
+   "note": "exact"
+  },
+  {
+   "method": "mps",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 32,
+   "seconds": 0.05652085499991699,
+   "peak_bytes": 322784,
+   "state_bytes": 137280,
+   "max_bond": 16,
+   "fidelity_vs_dense": null,
+   "note": "exact"
+  },
+  {
+   "method": "mps",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 48,
+   "seconds": 0.08609304400010842,
+   "peak_bytes": 455008,
+   "state_bytes": 230656,
+   "max_bond": 16,
+   "fidelity_vs_dense": null,
+   "note": "exact"
+  },
+  {
+   "method": "mps",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 64,
+   "seconds": 0.10813961100006964,
+   "peak_bytes": 561856,
+   "state_bytes": 308672,
+   "max_bond": 16,
+   "fidelity_vs_dense": null,
+   "note": "exact"
+  },
+  {
+   "method": "mps",
+   "circuit": "Brickwork (4 layers)",
+   "qubits": 96,
+   "seconds": 0.1890726960000393,
+   "peak_bytes": 775520,
+   "state_bytes": 476512,
+   "max_bond": 16,
+   "fidelity_vs_dense": null,
+   "note": "exact"
+  }
+ ]
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "ansatz_redundant_8",
+    "title": "Ansatz with leftovers (8q)",
+    "description": "Hero demo: run the debug agent to find and remove redundant gates, then see the verified fidelity gain.",
+    "file": "ansatz_redundant_8.qasm",
+    "noise": {
+      "p1": 0.002,
+      "p2": 0.02,
+      "amplitude_damping": 0.005,
+      "readout": 0.03
+    }
+  },
+  {
+    "id": "ghz_100",
+    "title": "GHZ state (100q)",
+    "description": "Structured, low-entanglement circuit: exact on the MPS backend with bond dimension 2 (dense would need 2x10^31 bytes).",
+    "file": "ghz_100.qasm",
+    "noise": {
+      "p1": 0.0005,
+      "p2": 0.005,
+      "amplitude_damping": 0.001,
+      "readout": 0.01
+    }
+  },
+  {
+    "id": "hea_32",
+    "title": "Variational ansatz (32q)",
+    "description": "Hardware-efficient ansatz with linear entanglement: exact MPS run where dense simulation needs 64 GiB.",
+    "file": "hea_32.qasm",
+    "noise": {
+      "p1": 0.0005,
+      "p2": 0.005,
+      "amplitude_damping": 0.001,
+      "readout": 0.01
+    }
+  },
+  {
+    "id": "grover_3",
+    "title": "Grover search (3q)",
+    "description": "One Grover iteration marking |101>; uses Toffoli gates (decomposed into CX + T).",
+    "file": "grover_3.qasm",
+    "noise": {
+      "p1": 0.002,
+      "p2": 0.02,
+      "amplitude_damping": 0.005,
+      "readout": 0.03
+    }
+  },
+  {
+    "id": "qft_roundtrip_6",
+    "title": "QFT round trip (6q)",
+    "description": "QFT followed by its inverse: long-range gates exercise MPS routing; the agent spots the redundancy.",
+    "file": "qft_roundtrip_6.qasm",
+    "noise": {
+      "p1": 0.002,
+      "p2": 0.02,
+      "amplitude_damping": 0.005,
+      "readout": 0.03
+    }
+  },
+  {
+    "id": "ghz_12",
+    "title": "GHZ state (12q)",
+    "description": "Classic entangled benchmark; exact dense simulation.",
+    "file": "ghz_12.qasm",
+    "noise": {
+      "p1": 0.002,
+      "p2": 0.02,
+      "amplitude_damping": 0.005,
+      "readout": 0.03
+    }
+  },
+  {
+    "id": "bell",
+    "title": "Bell state (2q)",
+    "description": "The hello-world of entanglement.",
+    "file": "bell.qasm",
+    "noise": {
+      "p1": 0.002,
+      "p2": 0.02,
+      "amplitude_damping": 0.005,
+      "readout": 0.03
+    }
+  },
+  {
+    "id": "broken",
+    "title": "Broken circuit (validation)",
+    "description": "Contains an out-of-range qubit, a misspelt gate and a missing parameter.",
+    "file": "broken.qasm",
+    "noise": {
+      "p1": 0.002,
+      "p2": 0.02,
+      "amplitude_damping": 0.005,
+      "readout": 0.03
+    }
+  }
+]
